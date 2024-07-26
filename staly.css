@@ -1,4 +1,4 @@
-.root{
+:root{
         --branco-principal: #FFFFFF;
         --cinza-secundario: #C0C0C0;
         --botao-azul: #167BF7;
@@ -16,9 +16,21 @@ body{
     }
     
 .principal{
-        background-image: url("img/background.png");
+        background-image: url("background.png");
+        background-repeat: no-repeat;
+        background-size: contain;
 }
 
 .container{
         height: 100vh;
+        display: grid;
 }
+
+.container__botao {
+        background-color: var(--botao-azul);
+        border-radius: 5px;
+        padding: 1em;
+        color: var(--branco-principal);
+        display: block;
+    }
+    
